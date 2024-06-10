@@ -5,7 +5,7 @@
   "addons": [],
   "buildpacks": [
     {
-      "url": "heroku/docker"
+      "url": "heroku-community/port"
     }
   ]
 }
