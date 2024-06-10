@@ -39,6 +39,9 @@ RUN apt-get update -qqy \
     && apt-get -qqy --no-install-recommends install \
         firefox htop terminator gnupg2 software-properties-common sudo xterm \
         wget \
+        telegram-desktop vlc \
+    && wget https://www.freedownloadmanager.org/download.htm -O FreeDM.deb \
+    && apt install -qqy --no-install-recommends ./FreeDM.deb \
     && wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb \
     && apt install -qqy --no-install-recommends ./google-chrome-stable_current_amd64.deb \
     && adduser --disabled-password --gecos "" account \
