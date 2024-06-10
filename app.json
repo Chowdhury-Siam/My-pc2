@@ -1,11 +1,11 @@
 {
-  "name": "Ubuntu-RDP-App",
-  "description": "Remote Desktop Environment using Ubuntu on Heroku",
-  "image": "heroku/pack:18",
-  "addons": [],
+  "name": "Ubuntu-RDP-Heroku",
   "buildpacks": [
     {
-      "url": "heroku-community/port"
+      "url": "heroku/docker"
     }
-  ]
+  ],
+  "scripts": {
+    "postdeploy": "start.sh"
+  }
 }
